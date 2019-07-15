@@ -193,30 +193,41 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 800px;
+        margin: 0 auto;
     }
 
     header{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        width: 100%;
+        width: 691px;
+        /* width: 100%; */
     }
     
     .topnav{
         display: flex;
-        flex-direction: column
+        flex-direction: column;
         /* width: 75%; */
         align-items: center;
         
     }
 
-    a .topnav header{
-        flex-direction: column;
-        
-        
-         
-        
+    header .topnav a{
+        /* width: 50%; */
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        border-top: 1px solid black;
+        margin: 0;    
+        width: 65%;
+        padding: 20px 0;
+        color: gray;
+    }
+
+    header nav a:last-child{
+        border-bottom: 1px solid black;
     }
 
     .cta{
@@ -236,9 +247,13 @@ footer {
     .main-content{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        /* width: 50%; */
         margin: 0 auto;
         
+    }
+
+    .main-content .top-content .text-content{
+        margin: 20px 0 20px 20px;
     }
 
     .top-content{
@@ -248,6 +263,36 @@ footer {
 
     .text-content{
         margin: 10px;
+    }
+
+    .main-content img{
+        height: 100px;
+    }
+
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .main-content .bottom-content .text-content{
+        width: 475px;
+        margin: 20px;
+    }
+
+    .contact {
+
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        
+    }
+    .contact h4{
+        justify-content: flex-start;
+    }
+    .contact p{
+        margin: 0;
+        justify-content: flex-start;
     }
 }   
 
