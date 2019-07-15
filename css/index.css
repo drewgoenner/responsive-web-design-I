@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   /* TB LR */
   margin: 0 auto;
 }
@@ -193,29 +194,118 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 800px;
-        margin: 0 auto;
+        width: 75%;
+        margin: auto;
+        padding: 0;
+        
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* justify-content: center; */
+    
+    /* width: 100%; */
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.topnav a{
+    /* justify-content: center; */
+    margin: 10px;
+}
+
+.cta {
+    margin: 0;
+}
+
+.cta img{
+    display: none;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* width: 50%; */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.main-content .top-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content .top-content .text-content{
+    padding: 20px 0 20px 20px;
+    width: 49%;
+    align-items: center;
+    margin-right: 0;
+}
+
+.main-content img{
+    width: 90%;
+}
+
+.main-content .bottom-content .text-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 30%;
+}
+
+.contact {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.contact h4{
+    justify-content: flex-start;
+}
+.contact p{
+    margin: 0;
+    justify-content: flex-start;
+}
+}
+
+
+@media screen and (max-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0 0;
+        
+        flex-wrap: wrap;
     }
 
     header{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column-reverse;
         align-items: center;
-        width: 691px;
-        /* width: 100%; */
+        
     }
     
     .topnav{
         display: flex;
         flex-direction: column;
-        /* width: 75%; */
         align-items: center;
         
     }
 
     header .topnav a{
-        /* width: 50%; */
         align-items: center;
         text-align: center;
         font-size: 25px;
@@ -224,6 +314,7 @@ footer {
         width: 65%;
         padding: 20px 0;
         color: gray;
+        
     }
 
     header nav a:last-child{
@@ -233,11 +324,13 @@ footer {
     .cta{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        
     }
 
     .cta-text{
-        display: flex;
-        flex-direction: column;
+        align-items: center;
+        margin: 0;
     }
 
     .cta img{
@@ -247,18 +340,28 @@ footer {
     .main-content{
         display: flex;
         flex-direction: column;
-        /* width: 50%; */
+        flex-wrap: wrap;
+        align-items: center;
         margin: 0 auto;
+        width: 100%;
+        
+        
         
     }
 
-    .main-content .top-content .text-content{
+     .main-content .top-content .text-content{
         margin: 20px 0 20px 20px;
-    }
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 75%;
+        
+    } 
 
     .top-content{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .text-content{
@@ -267,6 +370,9 @@ footer {
 
     .main-content img{
         height: 100px;
+        width: 90%;
+        align-content: center;
+        
     }
 
     .bottom-content{
@@ -276,7 +382,7 @@ footer {
     }
 
     .main-content .bottom-content .text-content{
-        width: 475px;
+        width: 75%;
         margin: 20px;
     }
 
@@ -284,7 +390,7 @@ footer {
 
         display: flex;
         flex-direction: column;
-        width: 65%;
+        width: 90%;
         
     }
     .contact h4{
@@ -294,5 +400,4 @@ footer {
         margin: 0;
         justify-content: flex-start;
     }
-}   
-
+}
