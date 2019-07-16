@@ -64,18 +64,19 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.container {
-  max-width: 880px;
-  width: 100%;
-  /* TB LR */
-  margin: 0 auto;
-}
+
 
 /* header */
+.container {
+    max-width: 880px;
+    width: 100%;
+    /* TB LR */
+    margin: 0 auto;
+  }
 
 header nav {
   display: inline-block;
-  width: 691px;
+  /* width: 691px; */
   vertical-align: top;
   margin-top: 35px;
 }
@@ -282,14 +283,7 @@ header{
 
 
 @media screen and (max-width: 500px){
-    .container{
-        max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding:0 0;
-        flex-wrap: wrap;
-    }
+    
 
     header{
         display: flex;
@@ -312,7 +306,7 @@ header{
         font-size: 25px;
         border-top: 1px solid black;
         margin: 0;    
-        width: 65%;
+        width: 500px;
         padding: 20px 0;
         color: gray;
         
@@ -371,7 +365,7 @@ header{
 
     .main-content img{
         height: 100px;
-        width: 90%;
+        /* width: 90%; */
         align-content: center;
         
     }
@@ -400,5 +394,18 @@ header{
     .contact p{
         margin: 0;
         justify-content: flex-start;
+    }
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0 0;
+        margin: 0;
+    }
+
+    .footer{
+        width: 100%;
     }
 }
